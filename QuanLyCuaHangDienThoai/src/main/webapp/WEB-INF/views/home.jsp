@@ -8,7 +8,7 @@
 <body>
 <h1>
 	Hello world!  
-	<button type="button" class="btn btn-primary">Primary</button>
+	<a href="<c:url value="menu.jsp"/>"><button type="button" class="btn btn-primary">Primary</button></a>
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
