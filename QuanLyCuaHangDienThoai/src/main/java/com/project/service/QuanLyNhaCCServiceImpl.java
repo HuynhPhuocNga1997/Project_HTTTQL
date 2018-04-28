@@ -14,7 +14,7 @@ import com.project.model.Nhacungcap;
 @Service
 @Transactional
 public class QuanLyNhaCCServiceImpl implements QuanLyNhaCCService {
-	@Autowired(required=false)
+	@Autowired
 	 QuanLyNhaCungCapDao nhacungcapdao;
 
 	@Override

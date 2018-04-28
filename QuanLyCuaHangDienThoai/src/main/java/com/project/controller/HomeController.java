@@ -23,29 +23,30 @@ import com.project.service.QuanLyNhaCCService;
  */
 @Controller
 public class HomeController {
-	 
+	@Autowired
+	 QuanLyNhaCCService nhacungcapsv;
 	 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
-		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
-		String formattedDate = dateFormat.format(date);
-		
-		model.addAttribute("serverTime", formattedDate );
-		
-		return "index";
-	}
-//	@RequestMapping(value="/",method=RequestMethod.GET)
-//	public String quanlynhacc(Model model){
-//		model.addAttribute("list_nhacc", nhaccService.listNhaCC());
-//		return "qualynhacc";
+//	@RequestMapping(value = "/", method = RequestMethod.GET)
+//	public String home(Locale locale, Model model) {
+//		logger.info("Welcome home! The client locale is {}.", locale);
+//		
+//		Date date = new Date();
+//		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+//		
+//		String formattedDate = dateFormat.format(date);
+//		
+//		model.addAttribute("serverTime", formattedDate );
+//		
+//		return "index";
 //	}
+	@RequestMapping(value="/",method=RequestMethod.GET)
+	public String quanlynhacc(Model model){
+		model.addAttribute("list_nhacc", nhacungcapsv.listNhaCC());
+		return "qualynhacc";
+	}
 }
