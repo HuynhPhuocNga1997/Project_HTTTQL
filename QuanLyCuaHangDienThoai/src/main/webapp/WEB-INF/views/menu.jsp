@@ -5,15 +5,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Menu</title>
-   <!-- Bootstrap -->
-    <link href="<c:url value="/resources/vendors/bootstrap/dist/css/bootstrap.min.css"/>" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="<c:url value="/resources/vendors/font-awesome/css/font-awesome.min.css"/>" rel="stylesheet">
-    <!-- NProgress -->
-    <link href=" <c:url value="/resources/vendors/nprogress/nprogress.css"/> " rel="stylesheet">
-
-    <!-- Custom Theme Style -->
-    <link href=" <c:url value="/resources/build/css/custom.min.css"/> " rel="stylesheet">
 </head>
 <body>
 
@@ -48,7 +39,7 @@
                         <li><a href="form.html">Quản lý nhân viên</a></li>
                         <li><a href="form.html">Quản lý hóa đơn</a></li>
                         <li><a href="form.html">Quản lý sản phẩm</a></li>
-                        <li><a href="form.html">Quản lý nhà cung cấp</a></li>
+                        <li><a href='<c:url value="/quanlynhacungcap"/>'>Quản lý nhà cung cấp</a></li>
                         <li><a href="form.html">Quản lý kho</a></li>
                         <li><a href="form.html">Quản lý khách hàng</a></li>
                         <li><a href="form.html">Quản lý duyệt hàng</a></li>
@@ -93,19 +84,5 @@
     <!-- footer content -->
     <!-- footer content -->
 
-
-    <!-- jQuery -->
-    <script src=" <c:url value="/resources/vendors/jquery/dist/jquery.min.js"/> "></script>
-    <!-- Bootstrap -->
-    <script src=" <c:url value="/resources/vendors/bootstrap/dist/js/bootstrap.min.js"/> "></script>
-    <!-- FastClick -->
-    <script src=" <c:url value="/resources/vendors/fastclick/lib/fastclick.js"/> "></script>
-    <!-- NProgress -->
-    <script src="<c:url value="/resources/vendors/nprogress/nprogress.js"/> "></script>
-    <!-- Chart.js -->
-    <script src="<c:url value="/resources/vendors/Chart.js/dist/Chart.min.js"/>"></script>
-
-    <!-- Custom Theme Scripts -->
-    <script src="<c:url value="/resources/build/js/custom.min.js"/>"></script>
 </body>
 </html>
